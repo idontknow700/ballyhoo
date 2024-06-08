@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
 <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
     <style>
+
         html, body {margin: 0; height: 100%; overflow: hidden}
         body {
             background-image: url("blur.png");
@@ -12,10 +15,10 @@
         .coming-soon {
             color: #000;
             font-family: "DIN Alternate";
-            font-size: 100px;
+            font-size: 6.689vw;
             font-style: normal;
             font-weight: 700;
-            line-height: 78px;
+            line-height: 5.217vw;
             position: absolute;
             top: 170px;
             left: 66px;
@@ -23,7 +26,7 @@
         .text {
             color: #000;
             font-family: "Outfit";
-            font-size: 27px;
+            font-size: 1.806vw;
             font-weight: 500;
             line-height: normal;
             letter-spacing: -1.68px;
@@ -41,7 +44,7 @@
         .signup-text {
             color: #000;
             font-family: "Outfit";
-            font-size: 18px;
+            font-size: 1.204vw;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -61,7 +64,7 @@ input[type="email"] {
     border: 1px solid #41464A;
     border-radius: 40px;
     padding: 10px;
-    width: 340px;
+    width: 22.742vw;
     outline: none;
     color: #A5A8AB;
     font-family: Outfit;
@@ -148,6 +151,102 @@ input[type="email"] {
     
 }
         
+@media (max-width: 767px) {
+        .gallery {
+        display:none;
+    }
+    .logo {
+        position: absolute;
+        transform: scale(0.8);
+        left: 38%;
+    }
+
+    html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
+.coming-soon {
+    color: #000;
+    font-family: "DIN Alternate";
+    font-size: 10vw; /* convert 6.689vw to vw */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.217; /* convert 5.217vw to vw */
+    position: absolute;
+    top: 15%; /* convert 170px to vw */
+    left: 20%; /* convert 66px to vw */
+}
+
+.text {
+            color: #000;
+            font-family: "Outfit";
+            font-size: 7vw;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -1.68px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 33%;
+            left: 20%;
+        }
+
+        .signup-text {
+            color: #000;
+            font-family: "Outfit";
+            font-size: 6.5vw;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.8px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+        }
+input[type="email"] {
+    border: 1px solid #41464A;
+    border-radius: 40px;
+    padding: 10px;
+    width: 40vw;
+    outline: none;
+    color: #A5A8AB;
+    font-family: Outfit;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    background: transparent;
+}
+.subscription-form {
+    position: absolute;
+    top: 65%;
+    left: 28%;
+}
+
+button {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        display: inline-flex;
+        padding: 18px 50px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5px;
+        border-radius: 40px;
+        background: #2F2926;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+}
+
+
+
     </style>
 </head>
 <body>
