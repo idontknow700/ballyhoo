@@ -109,7 +109,7 @@ input[type="email"] {
   width: var(--s);
   aspect-ratio: 1;
   padding: calc(var(--s)/20);
-  border-radius: 50%;
+  border-radius: 100%;
 }
 .gallery > img {
   grid-area: 1/1;
@@ -126,13 +126,16 @@ input[type="email"] {
 .gallery > img:nth-child(3) {animation-delay: -6s}
 .gallery > img:nth-child(4) {animation-delay: -9s}
 
+
 @keyframes m {
   0%,3%    {transform: rotate(0)}
-  22%,27%  {transform: rotate(-90deg)}
+  20%,22%  { -webkit-filter: blur(5px)}
+  22%,27%  {transform: rotate(-90deg)}  
   47%,52%  {transform: rotate(-180deg)}
   72%,77%  {transform: rotate(-270deg)}
   98%,100% {transform: rotate(-360deg)}
 }
+
 
 .footer1 {
     position:absolute;
